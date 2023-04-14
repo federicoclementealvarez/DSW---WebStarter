@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedeneta.net</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="container-left">
+            <a class=menu-item href="index.html">Home</a>
+            <a class=menu-item href="historia.html">Historia</a>
+            <a class=menu-item href="">Contact</a>
+            <a class=menu-item href="generator.html">Generador de Nombres</a>
+        </div>
+        <div class="container-right">
+            <strong class="contacto_toptext">¡Contáctese con nosotros!</strong>
+            <form>
+                <input type="text" class="contacto_inputbox" id="contacto_namebox"  placeholder="Nombre y Apellido">
+                <input type="text" class="contacto_inputbox" id="contacto_emailbox"  placeholder="Email">
+                <textarea class="contacto_inputbox" id="contacto_messagebox" cols="30" rows="10" placeholder="Mensaje a enviar"></textarea>
+                <span class="contacto_error" id="contacto_error">Debe completar todas las casillas para poder enviar el mensaje</span>
+                <button class="contacto_inputbox" type="submit" id="contacto_submit">Enviar</button>
+            </form>
+            <div class="contacto_feedback">
+                <p class="contacto_feedback_indicator" id="contacto_feedback_name_indicator">Nombre: </p>
+                <p id="contacto_feedback_name"></p>
+                <p class="contacto_feedback_indicator" id="contacto_feedback_email_indicator">Email: </p>
+                <p id="contacto_feedback_email"></p> <!-- por defecto no muestra nada, pues son objetos sin valor -->
+                <p class="contacto_feedback_indicator" id="contacto_feedback_message_indicator">Mensaje: </p>
+                <p id="contacto_feedback_message"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
